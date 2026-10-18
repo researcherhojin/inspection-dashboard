@@ -1,0 +1,180 @@
+{
+  "templates": [
+    {
+      "id": "R-커패시터",
+      "label": "커패시터 기본 검사",
+      "appliesTo": {
+        "category": "커패시터"
+      },
+      "checks": [
+        {
+          "id": "present",
+          "label": "부품 유무",
+          "type": "check",
+          "method": "육안"
+        },
+        {
+          "id": "polarity",
+          "label": "극성 방향",
+          "type": "check",
+          "method": "1번 패드(도면 ◆) 쪽과 부품 극성 표시 대조",
+          "when": {
+            "spec": "^CP_"
+          },
+          "marker": "pin1"
+        },
+        {
+          "id": "solder",
+          "label": "납땜 상태 (브리지·냉땜)",
+          "type": "check",
+          "method": "확대경"
+        }
+      ]
+    },
+    {
+      "id": "R-다이오드",
+      "label": "다이오드 기본 검사",
+      "appliesTo": {
+        "category": "다이오드"
+      },
+      "checks": [
+        {
+          "id": "polarity",
+          "label": "캐소드 방향",
+          "type": "check",
+          "method": "도면 ◆(K) 쪽이 부품 캐소드 띠",
+          "marker": "pin1"
+        },
+        {
+          "id": "solder",
+          "label": "납땜 상태",
+          "type": "check",
+          "method": "확대경"
+        }
+      ]
+    },
+    {
+      "id": "R-커넥터",
+      "label": "커넥터 기본 검사",
+      "appliesTo": {
+        "category": "커넥터"
+      },
+      "checks": [
+        {
+          "id": "seat",
+          "label": "들뜸 없음",
+          "type": "check",
+          "method": "측면 육안"
+        },
+        {
+          "id": "solder",
+          "label": "스루홀 납 채움",
+          "type": "check",
+          "method": "뒷면 확인"
+        }
+      ]
+    },
+    {
+      "id": "R-인덕터",
+      "label": "인덕터 기본 검사",
+      "appliesTo": {
+        "category": "인덕터"
+      },
+      "checks": [
+        {
+          "id": "present",
+          "label": "부품 유무",
+          "type": "check",
+          "method": "육안"
+        },
+        {
+          "id": "solder",
+          "label": "납땜 상태",
+          "type": "check",
+          "method": "확대경"
+        }
+      ]
+    },
+    {
+      "id": "R-저항",
+      "label": "저항 기본 검사",
+      "appliesTo": {
+        "category": "저항"
+      },
+      "checks": [
+        {
+          "id": "present",
+          "label": "부품 유무",
+          "type": "check",
+          "method": "육안"
+        },
+        {
+          "id": "marking",
+          "label": "값 마킹 일치",
+          "type": "check",
+          "method": "BOM 대조 (0402 등 작은 칩은 표기가 없을 수 있음)",
+          "expect": "group"
+        },
+        {
+          "id": "solder",
+          "label": "납땜 상태",
+          "type": "check",
+          "method": "확대경"
+        }
+      ]
+    },
+    {
+      "id": "R-IC",
+      "label": "IC 기본 검사",
+      "appliesTo": {
+        "category": "IC"
+      },
+      "checks": [
+        {
+          "id": "pin1",
+          "label": "1번 핀 방향",
+          "type": "check",
+          "method": "도면 ◆ 쪽이 부품 1번 핀 표시(점·홈)",
+          "marker": "pin1"
+        },
+        {
+          "id": "bridge",
+          "label": "리드 브리지 없음",
+          "type": "check",
+          "method": "확대경"
+        },
+        {
+          "id": "marking",
+          "label": "품번 마킹 일치",
+          "type": "check",
+          "method": "BOM 대조",
+          "expect": "part_no"
+        }
+      ]
+    }
+  ],
+  "exclude": {
+    "categories": [
+      "피듀셜 마크",
+      "그래픽·로고",
+      "기구 홀",
+      "테스트 포인트"
+    ]
+  },
+  "reasons": [
+    "부품 누락",
+    "역삽·방향 오류",
+    "납땜 불량",
+    "값·품번 불일치",
+    "도면 좌표 불일치",
+    "문서 확인 필요",
+    "기타"
+  ],
+  "auto": [
+    {
+      "id": "pkg",
+      "label": "칩 크기 일치 (BOM ↔ CAD)",
+      "rule": "package-size"
+    }
+  ]
+}

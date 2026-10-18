@@ -1,0 +1,330 @@
+{
+  "name": "LifeTrac III 트랙터 제작 도면 (Open Source Ecology)",
+  "domain": "용접·가공",
+  "description": "오픈소스 트랙터 LifeTrac III 의 제작 도면 52장(각관 절단·천공, 판재, 축, 용접 조립). 치수·용접 지시는 원본 도면에서 판독.",
+  "source": "https://commons.wikimedia.org/wiki/File:Open_Source_Ecology_-_LifeTrac_-_Fabrication_Drawings.pdf",
+  "license": "CC BY-SA 3.0 · Open Source Ecology",
+  "unit": "px",
+  "viewBox": [
+    0,
+    0,
+    1648,
+    1438
+  ],
+  "itemLabel": "부품·용접부",
+  "listLabel": "도면 부품 목록",
+  "sides": [
+    {
+      "id": "s00",
+      "label": "#00 2.5X30X1.25 DA HYD CYL INNER SHAFT",
+      "drawing": "sheets/sheet-00.png",
+      "mirror": false
+    },
+    {
+      "id": "s01",
+      "label": "#01 55 INCH FRONT-VERTICAL TUBE",
+      "drawing": "sheets/sheet-01.png",
+      "mirror": false
+    },
+    {
+      "id": "s02",
+      "label": "#02 59 INCH REAR-VERTICAL TUBE",
+      "drawing": "sheets/sheet-02.png",
+      "mirror": false
+    },
+    {
+      "id": "s03",
+      "label": "#03 60 INCH UNDER BASE TUBE",
+      "drawing": "sheets/sheet-03.png",
+      "mirror": false
+    },
+    {
+      "id": "s04",
+      "label": "#04 68 INCH TOP N-S TUBE",
+      "drawing": "sheets/sheet-04.png",
+      "mirror": false
+    },
+    {
+      "id": "s05",
+      "label": "#05 76 INCH INNER BASE TUBE",
+      "drawing": "sheets/sheet-05.png",
+      "mirror": false
+    },
+    {
+      "id": "s06",
+      "label": "#06 76 INCH OUTER BASE TUBE",
+      "drawing": "sheets/sheet-06.png",
+      "mirror": false
+    },
+    {
+      "id": "s07",
+      "label": "#07 9.5 INCH BOLT",
+      "drawing": "sheets/sheet-07.png",
+      "mirror": false
+    },
+    {
+      "id": "s08",
+      "label": "#08 ADAPTER PLATE",
+      "drawing": "sheets/sheet-08.png",
+      "mirror": false
+    },
+    {
+      "id": "s09",
+      "label": "#09 HEX BOLT_AI",
+      "drawing": "sheets/sheet-09.png",
+      "mirror": false
+    },
+    {
+      "id": "s10",
+      "label": "#10 HEX NUT_AI",
+      "drawing": "sheets/sheet-10.png",
+      "mirror": false
+    },
+    {
+      "id": "s11",
+      "label": "#11 2.5X30X1.25 DA HYD CYL",
+      "drawing": "sheets/sheet-11.png",
+      "mirror": false
+    },
+    {
+      "id": "s12",
+      "label": "#12 HYDRAULIC CYLINDER BASE MOUNT",
+      "drawing": "sheets/sheet-12.png",
+      "mirror": false
+    },
+    {
+      "id": "s13",
+      "label": "#13 HYDRAULIC VAVLE MOUNT",
+      "drawing": "sheets/sheet-13.png",
+      "mirror": false
+    },
+    {
+      "id": "s14",
+      "label": "#14 LOADER ARM 3.5 INCH SUPPORT ROUND",
+      "drawing": "sheets/sheet-14.png",
+      "mirror": false
+    },
+    {
+      "id": "s15",
+      "label": "#15 LOADER ARM 4.5 INCH SUPPORT ROUND",
+      "drawing": "sheets/sheet-15.png",
+      "mirror": false
+    },
+    {
+      "id": "s16",
+      "label": "#16 LOADER ARM ENDLUMP",
+      "drawing": "sheets/sheet-16.png",
+      "mirror": false
+    },
+    {
+      "id": "s17",
+      "label": "#17 LOADER ARM HYDRAULIC MOUNT PLATE",
+      "drawing": "sheets/sheet-17.png",
+      "mirror": false
+    },
+    {
+      "id": "s18",
+      "label": "#18 LOADER ARM LOWER",
+      "drawing": "sheets/sheet-18.png",
+      "mirror": false
+    },
+    {
+      "id": "s19",
+      "label": "#19 LOADER ARM SHAFT",
+      "drawing": "sheets/sheet-19.png",
+      "mirror": false
+    },
+    {
+      "id": "s20",
+      "label": "#20 LOADER ARM SUPPORT BEAM ANGLE IRON",
+      "drawing": "sheets/sheet-20.png",
+      "mirror": false
+    },
+    {
+      "id": "s21",
+      "label": "#21 LOADER ARM SUPPORT BEAM",
+      "drawing": "sheets/sheet-21.png",
+      "mirror": false
+    },
+    {
+      "id": "s22",
+      "label": "#22 2.5X36X1.5 DA HYD CYL inner shaft",
+      "drawing": "sheets/sheet-22.png",
+      "mirror": false
+    },
+    {
+      "id": "s23",
+      "label": "#23 TITLE",
+      "drawing": "sheets/sheet-23.png",
+      "mirror": false
+    },
+    {
+      "id": "s24",
+      "label": "#24 LOADER ARM UPPER",
+      "drawing": "sheets/sheet-24.png",
+      "mirror": false
+    },
+    {
+      "id": "s25",
+      "label": "#25 LOADER ARM",
+      "drawing": "sheets/sheet-25.png",
+      "mirror": false
+    },
+    {
+      "id": "s26",
+      "label": "#26 LOADER QUICK ATTACH PLATE WELDS",
+      "drawing": "sheets/sheet-26.png",
+      "mirror": false
+    },
+    {
+      "id": "s27",
+      "label": "#27 LOADER QUICK ATTACH PLATE",
+      "drawing": "sheets/sheet-27.png",
+      "mirror": false
+    },
+    {
+      "id": "s28",
+      "label": "#28 NEW PISTON MOUNT",
+      "drawing": "sheets/sheet-28.png",
+      "mirror": false
+    },
+    {
+      "id": "s29",
+      "label": "#29 NEW PLATE",
+      "drawing": "sheets/sheet-29.png",
+      "mirror": false
+    },
+    {
+      "id": "s30",
+      "label": "#30 1 INCH NUT DRILLED OUT",
+      "drawing": "sheets/sheet-30.png",
+      "mirror": false
+    },
+    {
+      "id": "s31",
+      "label": "#31 1 INCH PIN (8IN LONG)",
+      "drawing": "sheets/sheet-31.png",
+      "mirror": false
+    },
+    {
+      "id": "s32",
+      "label": "#32 ONE INCH PIN",
+      "drawing": "sheets/sheet-32.png",
+      "mirror": false
+    },
+    {
+      "id": "s33",
+      "label": "#33 2.5X36X1.5 DA HYD CYL",
+      "drawing": "sheets/sheet-33.png",
+      "mirror": false
+    },
+    {
+      "id": "s34",
+      "label": "#34 POWER CUBE BOTTOM MOUNT",
+      "drawing": "sheets/sheet-34.png",
+      "mirror": false
+    },
+    {
+      "id": "s35",
+      "label": "#35 POWER CUBE TOP MOUNT",
+      "drawing": "sheets/sheet-35.png",
+      "mirror": false
+    },
+    {
+      "id": "s36",
+      "label": "#36 RIM",
+      "drawing": "sheets/sheet-36.png",
+      "mirror": false
+    },
+    {
+      "id": "s37",
+      "label": "#37 ROD, 1 INCH",
+      "drawing": "sheets/sheet-37.png",
+      "mirror": false
+    },
+    {
+      "id": "s38",
+      "label": "#38 TIRE",
+      "drawing": "sheets/sheet-38.png",
+      "mirror": false
+    },
+    {
+      "id": "s39",
+      "label": "#39 TOP LOADER PLATE HYDRAULIC",
+      "drawing": "sheets/sheet-39.png",
+      "mirror": false
+    },
+    {
+      "id": "s40",
+      "label": "#40 WASHER 0.250-WIDE",
+      "drawing": "sheets/sheet-40.png",
+      "mirror": false
+    },
+    {
+      "id": "s41",
+      "label": "#41 WHEEL AXLE SHAFT HOLDING PLATE",
+      "drawing": "sheets/sheet-41.png",
+      "mirror": false
+    },
+    {
+      "id": "s42",
+      "label": "#42 WHEEL AXLE SHAFT",
+      "drawing": "sheets/sheet-42.png",
+      "mirror": false
+    },
+    {
+      "id": "s43",
+      "label": "#43 WHEEL HYDRAULIC MOTOR INTERFACE PLATE",
+      "drawing": "sheets/sheet-43.png",
+      "mirror": false
+    },
+    {
+      "id": "s44",
+      "label": "#44 3/4 INCH NUT",
+      "drawing": "sheets/sheet-44.png",
+      "mirror": false
+    },
+    {
+      "id": "s45",
+      "label": "#45 WHEEL MOTOR QA PLATE",
+      "drawing": "sheets/sheet-45.png",
+      "mirror": false
+    },
+    {
+      "id": "s46",
+      "label": "#46 WHEEL MOUNT DISC",
+      "drawing": "sheets/sheet-46.png",
+      "mirror": false
+    },
+    {
+      "id": "s47",
+      "label": "#47 WHEEL MOUNT ROUND",
+      "drawing": "sheets/sheet-47.png",
+      "mirror": false
+    },
+    {
+      "id": "s48",
+      "label": "#48 3/4 INCH WASHER",
+      "drawing": "sheets/sheet-48.png",
+      "mirror": false
+    },
+    {
+      "id": "s49",
+      "label": "#49 44 INCH TOP E-W TUBE",
+      "drawing": "sheets/sheet-49.png",
+      "mirror": false
+    },
+    {
+      "id": "s50",
+      "label": "#50 5.5 INCH BOLT",
+      "drawing": "sheets/sheet-50.png",
+      "mirror": false
+    },
+    {
+      "id": "s51",
+      "label": "#51 52 INCH MIDDLE-VERTICAL TUBE",
+      "drawing": "sheets/sheet-51.png",
+      "mirror": false
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+doc_id,title,type,url,summary
+DS-01,SMBJ5339B,데이터시트,https://datasheet.lcsc.com/lcsc/2207271730_LGE-SMBJ5339B_C5122124.pdf,설명: Zener Diode 5.6V 5W Surface Mount SMB (DO-214AA); MPN: SMBJ5339B; LCSC: C5122124
+DS-02,O93225100MEDA4SI-13,데이터시트,https://www.lcsc.com/datasheet/C496694.pdf,설명: 100MHz 20ppm XO (Standard) CMOS Oscillator 3.3V Enable/Disable SMD 3225; MPN: O93225100MEDA4SI-13; LCSC: C496694
+DS-03,XL-1005SURC,데이터시트,https://www.lcsc.com/datasheet/C25503345.pdf,설명: Red 625nm LED Indication - Discrete 2V 0402; MPN: XL-1005SURC; LCSC: C25503345
+DS-04,RVT1A471M0607,데이터시트,https://www.lcsc.com/datasheet/lcsc_datasheet_2411220152_ROQANG-RVT1A471M0607_C335982.pdf,"설명: 470µF 20% 10V Aluminium Electrolytic Capacitors Radial, Can - SMD 200mA@120Hz 2000 Hrs @ 105°C; MPN: RVT1A471M0607; LCSC: C335982"
+DS-05,WIP252012P-4R7ML,데이터시트,https://www.lcsc.com/datasheet/lcsc_datasheet_2410121513_INPAQ-WIP252012P-4R7ML_C964123.pdf,설명: 4.7µH Shielded Thin Film Inductor 1.55A 196mOhm Typ 1008 (2520 Metric); MPN: WIP252012P-4R7ML; LCSC: C964123
+DS-06,RVT1C101M0505,데이터시트,https://www.lcsc.com/datasheet/lcsc_datasheet_2411121455_ROQANG-RVT1C101M0505_C2977550.pdf,"설명: 100µF 16V Aluminum Electrolytic Capacitors Radial, Can - SMD 50mA@120Hz 2000 Hrs @ 105°C; MPN: RVT1C101M0505; LCSC: C2977550"
+DS-07,OPA1678IDGKR,데이터시트,https://www.ti.com/lit/ds/symlink/opa1678.pdf,설명: TI Audio Amplifier 2 Circuit 4.5V/36V (±2.25V/±18V) VSSOP-8; MPN: OPA1678IDGKR; LCSC: C2863133
+DS-08,PJ-320A,데이터시트,https://datasheet.lcsc.com/szlcsc/1912111437_SHOU-HAN-PJ-320D_C431535.pdf,"설명: Audio Jack, 4 Poles (TRRS); MPN: PJ-320A; LCSC: C2884926"
+DS-09,ES9018K2M,데이터시트,https://www.mouser.com/datasheet/3/3763/1/ES9018K2M-Datasheet-v3.7.pdf,설명: DAC Sabre I2S 384kHz/32bit DSD256 kHz Stereo low power audiophile DAC QFN-28 (5x5); MPN: ES9018K2M; LCSC: C2688377
+DS-10,PBY100505T-601Y-N,데이터시트,https://datasheet.lcsc.com/lcsc/1811141621_Chilisin-Elec-PBY100505T-601Y-N_C142082.pdf,설명: 600 Ohms @ 100MHz 1 Power Line Ferrite Bead 0402 (1005 Metric) 0.7A 340mOhm; MPN: PBY100505T-601Y-N; LCSC: C142082
+DS-11,TPS7A2033PDBVR,데이터시트,https://www.ti.com/lit/ds/symlink/tps7a20.pdf,"설명: 300mA Low-dropout Ultra-Low-Noise Voltage Regulator, Vout 3.3V, Vin up to 6.0V, SOT-23-5; MPN: TPS7A2033PDBVR; LCSC: C2862740"
+DS-12,C124375,데이터시트,https://datasheet.lcsc.com/szlcsc/1811151421_Ckmtw-Shenzhen-Cankemeng-C124375_C124375.pdf,"설명: Connector Header Through Hole 2 position 01x02 0.100"" (2.54mm); MPN: C124375; LCSC: C124375"
+DS-13,PJ79L09SQ,데이터시트,https://www.lcsc.com/datasheet/lcsc_datasheet_2410221617_PJSEMI-PJ79L09SQ_C41784049.pdf,"설명: 100mA Linear Voltage Regulator, Vout -9V, Vin down to -30V, SOT-89-3; MPN: PJ79L09SQ; LCSC: C41784049"
+DS-14,LR6206B-U33,데이터시트,https://www.lcsc.com/datasheet/lcsc_datasheet_2212192008_LR-LR6206B-U33_C5336486.pdf,"설명: 300mA Low-dropout Voltage Regulator, Vout 3.3V, Vin up to 6.5V, SOT-23-3; MPN: LR6206B-U33; LCSC: C5336486"
+DS-15,DC-005 5.5-2.0MM,데이터시트,https://datasheet.lcsc.com/lcsc/1811051112_BOOMELE-Boom-Precision-Elec-DC-005-2-0_C16214.pdf,설명: DC Barrel Jack with an internal switch 5.5x2.0mm; MPN: DC-005 5.5-2.0MM; LCSC: C16214
+DS-16,A0512S-2WR2,데이터시트,https://www.lcsc.com/datasheet/lcsc_datasheet_2401211050_YLPTEC-A0512S-2WR2_C5369424.pdf,"설명: 1.5k VDC Isolated DC/DC Converter Module, Dual Output Voltage ±12V ±84mA, 5V Input Voltage, 2W, SIP; MPN: A0512S-2WR2; LCSC: C5369424"
+DS-17,78L09,데이터시트,https://www.lcsc.com/datasheet/lcsc_datasheet_2410121529_HL-78L09_C22458782.pdf,"설명: 100mA Low-dropout Voltage Regulator, Vout 9V, Vin up to 35V, SOT-89-3; MPN: 78L09; LCSC: C22458782"
+DS-18,2.54-2*20PPC104,데이터시트,https://www.lcsc.com/datasheet/lcsc_datasheet_1811132110_BOOMELE-Boom-Precision-Elec-2-54-2-20PPC104_C35165.pdf,"설명: Connector Socket Through Hole 40 position 02x20 0.100"" (2.54mm) Extended Pins; MPN: 2.54-2*20PPC104; LCSC: C35165"

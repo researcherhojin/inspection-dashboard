@@ -1,0 +1,4 @@
+[
+  { "id": "pcb-lightsabre", "name": "LightSABRE DAC 오디오 기판 (KiCad 오픈소스)", "domain": "PCB" },
+  { "id": "lifetrac-iii", "name": "LifeTrac III 트랙터 제작 도면 (Open Source Ecology)", "domain": "용접·가공" }
+]

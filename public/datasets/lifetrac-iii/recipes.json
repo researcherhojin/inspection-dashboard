@@ -1,0 +1,197 @@
+{
+  "templates": [
+    {
+      "id": "R-TUBE",
+      "label": "각관 절단·천공 검사",
+      "appliesTo": {
+        "categories": [
+          "프레임 각관",
+          "로더 암 각관"
+        ]
+      },
+      "checks": [
+        {
+          "id": "length",
+          "label": "절단 길이",
+          "type": "number",
+          "unit": "in",
+          "nominal": "length_in",
+          "tol": 0.5,
+          "method": "줄자 · 도면 길이 대비 (표제란 일반공차)"
+        },
+        {
+          "id": "section",
+          "label": "단면 규격 일치",
+          "type": "check",
+          "method": "버니어 · 도면 단면도 대비",
+          "expect": "spec"
+        },
+        {
+          "id": "holes",
+          "label": "구멍 개수",
+          "type": "number",
+          "unit": "개",
+          "nominal": "holes",
+          "tol": 0,
+          "method": "도면 nX 표기 대비"
+        },
+        {
+          "id": "hole_dia",
+          "label": "구멍 지름",
+          "type": "number",
+          "unit": "in",
+          "nominal": "hole_dia_in",
+          "tol": 0.5,
+          "method": "핀 게이지 (표제란 .XXX 공차)"
+        },
+        {
+          "id": "deburr",
+          "label": "절단면·구멍 버 제거",
+          "type": "check",
+          "method": "육안·촉감"
+        }
+      ]
+    },
+    {
+      "id": "R-WELD",
+      "label": "용접부 외관·크기 검사",
+      "appliesTo": {
+        "category": "용접부"
+      },
+      "checks": [
+        {
+          "id": "size",
+          "label": "용접 크기(각장)",
+          "type": "number",
+          "unit": "in",
+          "nominal": "weld_size_in",
+          "minFromNominal": true,
+          "method": "필릿 게이지 · 도면 지시 이상"
+        },
+        {
+          "id": "bead",
+          "label": "비드 외관 균일",
+          "type": "check",
+          "method": "육안"
+        },
+        {
+          "id": "crack",
+          "label": "균열·기공·언더컷 없음",
+          "type": "check",
+          "method": "육안 + 확대경"
+        }
+      ]
+    },
+    {
+      "id": "R-ASSY",
+      "label": "용접 조립품 검사",
+      "appliesTo": {
+        "category": "용접 조립품"
+      },
+      "checks": [
+        {
+          "id": "overall",
+          "label": "전체 길이",
+          "type": "number",
+          "unit": "in",
+          "nominal": "length_in",
+          "tol": 0.5,
+          "method": "줄자"
+        },
+        {
+          "id": "square",
+          "label": "직각도·뒤틀림 없음",
+          "type": "check",
+          "method": "직각자·정반"
+        },
+        {
+          "id": "welds",
+          "label": "용접부(W01~W10) 개별 검사 완료",
+          "type": "check",
+          "method": "용접부 목록 확인"
+        }
+      ]
+    },
+    {
+      "id": "R-PLATE",
+      "label": "판재·브래킷 가공 검사",
+      "appliesTo": {
+        "category": "판재·브래킷"
+      },
+      "checks": [
+        {
+          "id": "outline",
+          "label": "외형 치수 도면 일치",
+          "type": "check",
+          "method": "줄자·버니어"
+        },
+        {
+          "id": "holes",
+          "label": "구멍 위치·개수 도면 일치",
+          "type": "check",
+          "method": "도면 대비"
+        },
+        {
+          "id": "deburr",
+          "label": "버 제거",
+          "type": "check",
+          "method": "육안·촉감"
+        }
+      ]
+    },
+    {
+      "id": "R-SHAFT",
+      "label": "축·핀·환봉 가공 검사",
+      "appliesTo": {
+        "category": "축·핀·환봉"
+      },
+      "checks": [
+        {
+          "id": "length",
+          "label": "길이",
+          "type": "number",
+          "unit": "in",
+          "nominal": "length_in",
+          "tol": 0.5,
+          "method": "버니어"
+        },
+        {
+          "id": "dia",
+          "label": "외경 도면 일치",
+          "type": "check",
+          "method": "마이크로미터"
+        },
+        {
+          "id": "chamfer",
+          "label": "모따기·나사부 상태",
+          "type": "check",
+          "method": "육안"
+        }
+      ]
+    }
+  ],
+  "exclude": {
+    "categories": [
+      "유압 부품",
+      "체결 부품",
+      "바퀴"
+    ]
+  },
+  "reasons": [
+    "절단 길이 불량",
+    "구멍 누락·위치 불량",
+    "용접 누락",
+    "용접 크기 부족",
+    "균열·기공",
+    "도면 정보 누락(표제·재질)",
+    "도면 불일치 확인 필요",
+    "기타"
+  ],
+  "auto": [
+    {
+      "id": "title",
+      "label": "도면명 길이 = 도면 치수",
+      "rule": "title-length"
+    }
+  ]
+}

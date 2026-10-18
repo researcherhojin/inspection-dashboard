@@ -1,0 +1,35 @@
+{
+  "name": "LightSABRE DAC (오디오 DAC 기판)",
+  "domain": "PCB",
+  "description": "KiCad 원본(LightSABRE_DAC.kicad_pcb)에서 자동 변환",
+  "source": "https://github.com/Darmur/lightsabre-dac",
+  "unit": "mm",
+  "viewBox": [
+    107,
+    67.5,
+    71,
+    62
+  ],
+  "itemLabel": "부품",
+  "listLabel": "BOM 계층",
+  "sides": [
+    {
+      "id": "top",
+      "label": "앞면",
+      "drawing": "drawing-top.svg",
+      "mirror": false
+    },
+    {
+      "id": "bottom",
+      "label": "뒷면",
+      "drawing": "drawing-bottom.svg",
+      "mirror": true
+    }
+  ],
+  "license": "CC0 1.0 (원본 저장소 LICENSE 참조)",
+  "model": {
+    "url": "model.glb",
+    "label": "3D 모델",
+    "note": "원본 저장소의 KiCad 3D 모델(STEP)을 변환. 색은 원본에 없어 부품 종류별로 지정했고, 부품 번호는 패키지·위치로 매칭했습니다."
+  }
+}
