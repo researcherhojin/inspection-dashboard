@@ -2,7 +2,7 @@
 
 [![Demo](https://img.shields.io/badge/demo-live-F38020?logo=cloudflare&logoColor=white)](https://inspection-dashboard.inspection-dashboard.workers.dev)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
-![Node](https://img.shields.io/badge/node-%E2%89%A520.19-339933?logo=nodedotjs&logoColor=white)
+![Node](https://img.shields.io/badge/node-20.19%2B%20%7C%2022.12%2B-339933?logo=nodedotjs&logoColor=white)
 ![React](https://img.shields.io/badge/React-19.3-61DAFB?logo=react&logoColor=black)
 ![Vite](https://img.shields.io/badge/Vite-8.3-646CFF?logo=vite&logoColor=white)
 ![three.js](https://img.shields.io/badge/three.js-0.186-000000?logo=threedotjs&logoColor=white)
@@ -22,13 +22,15 @@
 
 | 화면 | 내용 |
 |---|---|
-| 현황 | 진행률, 분류별 진행, 확인할 것, 상태 색 3D |
-| 검사 | 목록 · 도면(3D) · 기록, 입력 즉시 판정 |
+| 현황 | 진행률, 분류별 진행, 확인할 것, 상태별 색 3D¹ |
+| 검사 | 목록 · 도면 · 3D¹ · 기록, 입력 즉시 판정 |
 | 성적서 | 요약, 불합격 상세, 전체 판정표, 인쇄 / PDF |
 
-- 규칙 기반 판정: `도면 치수 ± 공차` (AI 영상 판정 없음)
+¹ `meta.json` 에 3D 모델(`model`)이 있는 데이터만
+
+- 규칙 기반 판정: 도면 치수 ± 공차 또는 고정 범위 (AI 영상 판정 없음)
 - 항목 구분: `측정` · `육안` · `자동`
-- 자동 처리: 해당 없는 항목 제외, 데이터 간 일치 비교, CAD 1번 패드 표시
+- 자동 처리: 해당 없는 항목 제외, 데이터 간 일치 비교, 1번 패드 위치 표시(CAD 데이터)
 - 기록: localStorage, undo 30단계, CSV / JSON 입출력
 - 딥링크: `#/<data>/<page>/<ref>`
 
@@ -63,8 +65,9 @@ flowchart LR
   subgraph browser["src/ (browser)"]
     direction TB
     io["io / loadDataset"] --> hooks["hooks"]
-    hooks --> core["core"]
-    core --> ui["pages · components"]
+    hooks --> ui["pages · components"]
+    core["core"] --> hooks
+    core --> ui
     ui --> out["io / exporters"]
   end
 
@@ -89,22 +92,24 @@ flowchart LR
 
 - **PCB**: KiCad 원본(`.kicad_pcb`, `.pos.csv`, `.step`)에서 자동 변환
   - 156 parts (검사 대상 137)
-  - 3D 부품 매칭 137 / 137, 최대 오차 0.108 mm
+  - 3D 부품 매칭 137 / 137 (패키지 기준 매칭 위치 오차 최대 0.108 mm)
 - **LifeTrac**: 스캔 PDF 52장
   - 치수 · 용접 위치는 수작업 판독
   - 원본 도면 결함 4건은 `review` 열에 기록
 - 검사 기준(`recipes.json`)은 이 프로젝트에서 작성
 - 파일별 출처: `public/datasets/*/README.md`
 
-데이터 재생성:
+데이터 생성:
 
 ```bash
 node scripts/kicad-to-dataset.mjs <board>.kicad_pcb public/datasets/<id> [<board>.pos.csv]
-node scripts/step-to-glb.mjs <board>.3D-model.step public/datasets/<id>
-python scripts/build-lifetrac-dataset.py <drawings>.pdf public/datasets/lifetrac-iii
+node scripts/step-to-glb.mjs <board>.step public/datasets/<id>
+python scripts/build-lifetrac-dataset.py <LifeTrac>.pdf public/datasets/lifetrac-iii
 ```
 
-PDF 변환에는 `pymupdf`, `pillow` 가 필요합니다.
+- KiCad · STEP 변환은 다른 기판에도 사용할 수 있습니다.
+- PDF 변환은 LifeTrac 전용입니다. 판독 값이 스크립트에 들어 있으며 `pymupdf`, `pillow` 가 필요합니다.
+- 기존 `recipes.json` 은 덮어쓰지 않습니다.
 
 ## Docs
 

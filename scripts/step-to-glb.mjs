@@ -105,7 +105,7 @@ for (const e of meshes) {
 const doc = new Document();
 const buffer = doc.createBuffer();
 const scene = doc.createScene('board');
-const root = doc.createNode('LightSABRE').setRotation([-Math.SQRT1_2, 0, 0, Math.SQRT1_2]);
+const root = doc.createNode('board').setRotation([-Math.SQRT1_2, 0, 0, Math.SQRT1_2]);
 scene.addChild(root);
 const matCache = new Map();
 const material = (rgb) => {

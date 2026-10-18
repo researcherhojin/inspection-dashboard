@@ -155,8 +155,10 @@ export default function ModelViewer({ url, selectedRef, statusOf, onPick, height
         (gltf) => {
           if (!alive) return;
           group.add(gltf.scene);
+          // 최상위 노드(기판 하나)의 자식 = 부품. 이름이 부품 번호 ('__' 로 시작하면 기판 · 기타)
+          const root = gltf.scene.children.length === 1 ? gltf.scene.children[0] : gltf.scene;
+          for (const o of root.children) if (o.name && !o.name.startsWith('__')) nodes.set(o.name, o);
           gltf.scene.traverse((o) => {
-            if (o.name && !o.name.startsWith('__') && o.parent?.name === 'LightSABRE') nodes.set(o.name, o);
             if (o.isMesh) o.material.side = THREE.DoubleSide;
           });
           for (const o of nodes.values()) remember(o);
