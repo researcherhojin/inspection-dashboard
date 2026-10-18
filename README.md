@@ -6,6 +6,8 @@
 - 버전: 0.1.0
 - 라이선스: 코드 [MIT](LICENSE) · 데이터는 원본 라이선스를 따름 ([라이선스](#라이선스))
 - 포함 데이터: 공개 오픈소스 원본 2종 ([포함된 데이터](#포함된-데이터))
+- 배포: https://inspection-dashboard.inspection-dashboard.workers.dev
+- 저장소: https://github.com/researcherhojin/inspection-dashboard
 
 > [!IMPORTANT]
 > 이 대시보드는 공개된 오픈소스 데이터로 만든 예시입니다. 만든 사람에게 PCB 실장 검사와 용접 · 가공 검사의 현장 지식이 부족해, 검사 항목과 판정 기준(공차, 확인 방법)을 엄밀하게 다듬지는 못했습니다. 실제 검사에 쓰려면 해당 분야 전문가가 기준을 검토하고 보완해야 합니다.
@@ -16,12 +18,13 @@
 1. [주요 기능](#주요-기능)
 2. [요구 사항](#요구-사항)
 3. [설치 및 실행](#설치-및-실행)
-4. [포함된 데이터](#포함된-데이터)
-5. [데이터 추가 및 재생성](#데이터-추가-및-재생성)
-6. [프로젝트 구조](#프로젝트-구조)
-7. [테스트](#테스트)
-8. [범위와 제한](#범위와-제한)
-9. [라이선스](#라이선스)
+4. [배포](#배포)
+5. [포함된 데이터](#포함된-데이터)
+6. [데이터 추가 및 재생성](#데이터-추가-및-재생성)
+7. [프로젝트 구조](#프로젝트-구조)
+8. [테스트](#테스트)
+9. [범위와 제한](#범위와-제한)
+10. [라이선스](#라이선스)
 
 ## 주요 기능
 
@@ -75,6 +78,15 @@ npm run dev        # 개발 서버: http://localhost:5173
 ```bash
 npm run build      # dist/ 생성
 npm run preview    # dist/ 확인용 로컬 서버
+```
+
+## 배포
+
+정적 파일만으로 동작하므로 어느 정적 호스팅에도 올릴 수 있습니다. 현재 배포는 Cloudflare Workers 의 정적 자산 기능을 사용합니다(설정: `wrangler.jsonc`).
+
+```bash
+npm run build
+npx wrangler deploy      # Cloudflare 계정 로그인 필요 (npx wrangler login)
 ```
 
 ## 포함된 데이터
@@ -186,6 +198,7 @@ scripts/                 원본 → 데이터 변환
 tests/unit/              core 단위 테스트
 tests/dashboard.spec.js  화면 테스트
 docs/                    user-guide.md(사용 방법), dataset-schema.md(데이터 형식)
+wrangler.jsonc           Cloudflare 배포 설정
 ```
 
 ## 테스트

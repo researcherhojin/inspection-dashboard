@@ -1,0 +1,6 @@
+// Cloudflare Workers 정적 자산 배포 설정 — `npm run build` 후 `npx wrangler deploy`
+{
+  "name": "inspection-dashboard",
+  "compatibility_date": "2026-10-12",
+  "assets": { "directory": "./dist" }
+}
